@@ -7,8 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import androidx.navigation.compose.rememberNavController
-import com.implementing.engagecode.navigation.MainNavigation
+import com.implementing.engagecode.navigation.bottomnav.MainNavigation
 import com.implementing.engagecode.ui.theme.EngageCodeTheme
 
 class MainActivity : ComponentActivity() {

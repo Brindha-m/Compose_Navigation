@@ -1,4 +1,4 @@
-package com.implementing.engagecode.navigation
+package com.implementing.engagecode.navigation.contentnav
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -60,9 +60,7 @@ object Route {
 fun CardList(
     navigateToDetail: () -> Unit
 ){
-    Column(
-        verticalArrangement = Arrangement.spacedBy(10.dp)
-    ) {
+    Column(){
         Card(
             modifier = Modifier
                 .padding(65.dp)

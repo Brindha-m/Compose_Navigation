@@ -1,7 +1,5 @@
 package com.implementing.engagecode.navigation
 
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -12,6 +10,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.implementing.engagecode.navigation.contentnav.AppBookmarkNavigation
+import com.implementing.engagecode.navigation.contentnav.AppHomeNavigation
 
 @Composable
 fun HomeScreen()
@@ -46,6 +46,8 @@ fun BookmarkScreen()
         fontSize = 14.sp,
         modifier = Modifier.padding(70.dp)
     )
+
+    AppBookmarkNavigation()
 }
 
 @Composable

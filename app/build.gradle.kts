@@ -70,7 +70,7 @@ dependencies {
     /** Compose navigation */
     implementation("androidx.navigation:navigation-compose:2.6.0")
 
-    /** Animated Compose navigation */
+    /** Animated Compose Bottom navigation */
     implementation("com.exyte:animated-navigation-bar:1.0.0")
 
 }
