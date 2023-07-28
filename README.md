@@ -66,7 +66,7 @@ Compose Bottom and Deep Link Navigation.
        }
 
 
-5. /* List of Bottom nav items can include names also */
+5. List of Bottom nav items can include names also ex: NavigationItems(val route : String, @DrawableRes val icon : Int, etc.. )
 
         enum class NavigationBarItems(@DrawableRes val icon: Int){
    
