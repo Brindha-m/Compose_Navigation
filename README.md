@@ -30,3 +30,52 @@ Compose Bottom and Deep Link Navigation.
      }
      
      ```
+
+3. In ListScreen Composable,
+   
+            @Composable
+            fun ListScreen(navigateToDetail:() -> Unit)
+            {
+               Card(
+                    modifier = Modifier
+                        .padding(65.dp)
+                        .fillMaxWidth()
+                        .clickable(onClick = navigateToDetail), // 👉🏻 onClick implement the route variable.
+   
+                   ){
+                      Text()
+                      Icon() //Other Composable elements..
+                   }
+
+             }
+
+
+4. For Bottom Screen,
+   
+       Scaffold(
+   
+           modifier = Modifier.padding(5.dp),
+       
+           topBar = { TopAppBar(title ={}, color = Color.Transparent ) },
+       
+           bottomBar = { AnimatedNavigationBar() // Depends and changes accordingly }
+
+       ) {
+               // Nav to Diff Composable Screens 
+   
+       }
+
+
+5. /* List of Bottom nav items can include names also */
+
+        enum class NavigationBarItems(@DrawableRes val icon: Int){
+   
+            Home(icon = R.drawable.ic_home_empty),
+   
+            Notification(icon = R.drawable.ic_notifications),
+   
+            Bookmark(icon = R.drawable.ic_bookmark),
+   
+            Profile(icon = R.drawable.ic_profile_empty)
+        
+        }
