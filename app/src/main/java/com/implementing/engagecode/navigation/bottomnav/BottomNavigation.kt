@@ -26,6 +26,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.exyte.animatednavbar.AnimatedNavigationBar
 import com.exyte.animatednavbar.animation.balltrajectory.Parabolic
 import com.exyte.animatednavbar.animation.indendshape.Height
@@ -56,7 +57,7 @@ fun MainNavigation() {
         topBar = {
             TopAppBar(
                 title = {
-                    Text(text = "Engage Code", color = Color.LightGray, fontFamily = FontFamily.Monospace)
+                    Text(text = "Engage Code", color = Color.LightGray, fontFamily = FontFamily.Monospace, fontSize = 16.sp )
                 },
                 colors = TopAppBarDefaults.smallTopAppBarColors(containerColor = Color.Transparent)
             )
