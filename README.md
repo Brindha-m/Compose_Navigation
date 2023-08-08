@@ -43,8 +43,7 @@ Compose Bottom and Deep Link Navigation.
        }
         
        composable(
-            Screen.BookmarksScreen.route,
-   
+            Screen.BookmarkDetailScreen.route,
             arguments = listOf(navArgument(Constants.BOOKMARK_ID_ARG) {
                 type = NavType.IntType
             })
