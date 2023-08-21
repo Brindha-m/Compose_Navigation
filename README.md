@@ -113,3 +113,42 @@ Compose Bottom and Deep Link Navigation.
             Profile(icon = R.drawable.ic_profile_empty)
         
         }
+
+
+
+## Deep links Sample
+
+     composable(
+     
+        route = Screen.TasksScreen.route,
+        
+        arguments = listOf(navArgument(Constants.ADD_TASK_ARG) {
+            type = NavType.BoolType
+            defaultValue = false
+        }),
+        
+        deepLinks = listOf(
+            navDeepLink { 
+                uriPattern = "${Constants.TASKS_SCREEN_URI}/{${Constants.ADD_TASK_ARG}}"
+            }
+        )
+    
+    ) {
+
+    /** Composable goes here **/
+    
+        TasksScreen(
+            navController = navController,
+            addTask = it.arguments?.getBoolean(Constants.ADD_TASK_ARG) ?: false
+        )
+        
+    }
+
+
+
+ 
+ Note: 
+ 
+   ` const val TASK_DETAILS_URI = "app://com.implementing.feedfive/task_details" `
+    
+   ` const val ADD_TASK_ARG = "add_task" `
